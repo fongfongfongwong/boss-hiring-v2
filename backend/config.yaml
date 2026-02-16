@@ -1,0 +1,40 @@
+# Boss 直聘自动化招聘系统 - 全局配置
+
+# RPA 浏览器配置
+browser:
+  chrome_path: "/Applications/Google Chrome 2.app/Contents/MacOS/Google Chrome"
+  profile_path: "./data/chrome_profile_pw"
+  debug_port: 9222
+
+# 操作限流
+throttle:
+  greeting_daily_limit: 80        # 每日打招呼上限 (Boss限制100, 留buffer)
+  action_delay_min: 2.0           # 操作间最小延迟 (秒)
+  action_delay_max: 8.0           # 操作间最大延迟 (秒)
+  batch_pause_count: 12           # 每打N个招呼后暂停
+  batch_pause_min: 60             # 批次暂停最短时间 (秒)
+  batch_pause_max: 180            # 批次暂停最长时间 (秒)
+  working_hours_start: "09:00"    # 工作时段开始
+  working_hours_end: "18:00"      # 工作时段结束
+
+# 简历评分权重
+scoring:
+  weights:
+    skill_match: 0.30             # 技能匹配度
+    experience_relevance: 0.25    # 经验相关性
+    education_fit: 0.15           # 学历契合度
+    project_quality: 0.20         # 项目质量
+    overall_recommendation: 0.10  # 综合推荐度
+  qualified_threshold: 70         # 达标分数线
+
+# 沟通策略
+communication:
+  max_followup_rounds: 3          # 最大跟进轮次
+  followup_wait_hours: 24         # 跟进等待时间 (小时)
+  recruiter_wechat: ""            # 招聘者微信号 (发给候选人)
+  recruiter_email: ""             # 招聘者邮箱
+
+# Web 服务
+web:
+  host: "0.0.0.0"
+  port: 8000

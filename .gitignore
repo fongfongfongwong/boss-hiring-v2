@@ -1,0 +1,42 @@
+# Environment & Secrets
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+# Runtime data
+backend/data/boss_recruiter.db
+backend/data/chrome_profile/
+backend/data/chrome_profile_pw/
+backend/data/logs/
+backend/data/resumes/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

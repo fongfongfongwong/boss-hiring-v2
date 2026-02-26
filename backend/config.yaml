@@ -2,7 +2,7 @@
 
 # RPA 浏览器配置
 browser:
-  chrome_path: "/Applications/Google Chrome 2.app/Contents/MacOS/Google Chrome"
+  chrome_path: "C:/Program Files/Google/Chrome/Application/chrome.exe"
   profile_path: "./data/chrome_profile_pw"
   debug_port: 9222
 
